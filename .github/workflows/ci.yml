@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.set_version.outputs.version }}
+    environment:
+      name: production
+      url: https://pizza.ethan0.click
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
