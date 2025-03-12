@@ -12,7 +12,7 @@ jobs:
     outputs:
       version: ${{ steps.set_version.outputs.version }}
     environment:
-      name: production
+      name: staging
       url: https://pizza.ethan0.click
     steps:
       - name: Checkout repo
